@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Tharick - Digital Alchemist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="custom-cursor"></div>
+
+    <div class="loader">
+        <div class="loader-symbol">✨</div>
+        <p>Brewing Digital Potions...</p>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">MT</div>
+            <ul>
+                <li><a href="#hero">Unveiling</a></li>
+                <li><a href="#about">Profile</a></li>
+                <li><a href="#projects">Creations</a></li>
+                <li><a href="#skills">Arcanum</a></li>
+                <li><a href="#contact">Summon</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle-button" title="Toggle theme" aria-label="Toggle theme">
+            <span class="icon-sun">☀️</span>
+            <span class="icon-moon" style="display:none;">🌙</span>
+        </button>
+        
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span>M</span><span>o</span><span>H</span><span>A</span><span>M</span><span>M</span><span>E</span><span>D</span> <span>T</span><span>H</span><span>A</span><span>R</span><span>I</span><span>C</span><span>K</span>
+                </h1>
+                <h2 class="hero-subtitle">Digital Alchemist & Web Developer</h2>
+                <p class="hero-tagline">Transmuting Ideas into Interactive Realities.</p>
+                <a href="#projects" class="cta-button">View My Creations</a>
+            </div>
+            <div class="hero-particles" id="hero-particles"></div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>The Alchemist's Profile</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="tharick.jpg" alt="Your Name">
+                </div>
+                <div class="about-text">
+                    <p>Ye olde web wizard here! No React familiars or Vue homunculi in my tower - just good ol' HTML golems, CSS phoenixes, and JavaScript dragons that I tame with vanilla spells. Beware my Responsive Incantation and the mighty Flexbox Alignment Ritual!</p>
+                    <p>My quest is to transform user needs into elegant, functional, and enchanting web applications.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2>Formulated Creations</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="eclat dime.png" alt="Project 1">
+                    <div class="project-info">
+                        <h3>Eclat Dine</h3>
+                        <p>A mystical restaurent platform for enchanted goods.</p>
+                        <div class="project-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                        <button class="project-link" data-project-id="project1">View Experiment</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="system interface.png" alt="Project 2">
+                    <div class="project-info">
+                        <h3>Solo Levelling System</h3>
+                        <p>An awesome website like Solo Levelling System.</p>
+                        <div class="project-tags">
+                            <span>HTML</span><span>React</span><span>CSS</span><span>JavaScript</span><span>Node</span>
+                        </div>
+                        <button class="project-link" data-project-id="project2">View Experiment</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="mystic motors.png" alt="Project 3">
+                    <div class="project-info">
+                        <h3>Mystic Motors</h3>
+                        <p>A mystical transportation platform for enchanted rides, Mystic Motors offers magical journeys with comfort and style</p>
+                        <div class="project-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>GSAP</span>
+                        </div>
+                        <button class="project-link" data-project-id="project3">View Experiment</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <h2>The Arcane Library</h2>
+            <div class="skills-constellation-wrapper">
+                <div class="skills-constellation" id="skillsConstellation">
+                    <div class="skill-star" data-skill="HTML" data-id="html" style="top: 20%; left: 30%;"><span>HTML</span></div>
+                    <div class="skill-star" data-skill="CSS" data-id="css" style="top: 40%; left: 15%;"><span>CSS</span></div>
+                    <div class="skill-star" data-skill="JavaScript" data-id="js" style="top: 30%; left: 50%;"><span>JS</span></div>
+                    <div class="skill-star" data-skill="React" data-id="react" style="top: 50%; left: 40%;"><span>React</span></div>
+                    <div class="skill-star" data-skill="Node.js" data-id="node" style="top: 60%; left: 65%;"><span>Node</span></div>
+                    <div class="skill-star" data-skill="Python" data-id="python" style="top: 75%; left: 25%;"><span>Python</span></div>
+                    <div class="skill-star" data-skill="GSAP" data-id="gsap" style="top: 25%; left: 70%;"><span>GSAP</span></div>
+                </div>
+                <div class="skill-tooltip" id="skillTooltip"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Summoning Rites</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <button type="submit" class="submit-rune">Send Invocation</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> Mohammed Tharick. All rights reserved. Crafted with code & a touch of magic.</p>
+    </footer>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <h3 id="modalProjectTitle">Project Title</h3>
+            <img id="modalProjectImage" src="" alt="Project Image">
+            <p id="modalProjectDescription">Detailed project description goes here...</p>
+            <div id="modalProjectTech" class="project-tags"></div>
+            <a id="modalProjectLink" href="#" target="_blank" class="cta-button">Visit Live Site</a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
