@@ -73,11 +73,11 @@ document.addEventListener('DOMContentLoaded', () => {
             liveLink: "https://mohammedtharick25.github.io/Eclat-Dime-Restaurant/"
         },
         project2: {
-            title: "Solo Levelling System",
+            title: "Solo Leveling System",
             image: "system interface.png",
-            description: "solo levelling system is a dynamic, interactive website inspired by the popularity of the solo leveling webtoon. Built with HTML5, CSS3, and JavaScript, it features a responsive design that adapts to various devices. The site includes a visually stunning hero section with smooth animations powered by GSAP, an interactive character selection system, and detailed information about the solo leveling universe.",
+            description: "Solo Leveing System is a dynamic, interactive website inspired by the popularity of the solo leveling webtoon. Built with HTML5, CSS3, and JavaScript, it features a responsive design that adapts to various devices. The site includes a visually stunning hero section with smooth animations powered by GSAP, an interactive character selection system, and detailed information about the solo leveling universe.",
             tags: ["HTML5", "CSS3", "JavaScript","React", "Responsive Design","Node.js"],
-            liveLink: "https://mohammedtharick25.github.io/solo-levelling-system/" // Replace with actual link if available
+            liveLink: "https://mohammedtharick25.github.io/Solo-Leveling-System/" // Replace with actual link if available
         },
         project3: {
             title: "Mystic Motors - Transportation Service",
