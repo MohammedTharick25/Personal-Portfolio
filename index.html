@@ -4,45 +4,152 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mohammed Tharick - Digital Alchemist</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- External stylesheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Custom Cursor -->
     <div class="custom-cursor"></div>
 
+    <!-- Loader -->
     <div class="loader">
       <div class="loader-symbol">✨</div>
       <p>Brewing Digital Potions...</p>
     </div>
 
+    <!-- Header -->
     <header>
       <nav>
         <div class="logo">MT</div>
-        <ul>
+
+        <!-- Navigation Links (This becomes the mobile menu) -->
+        <ul class="nav-links">
+          <button class="close-mobile-menu" aria-label="Close menu">×</button>
           <li><a href="#hero">Unveiling</a></li>
           <li><a href="#about">Profile</a></li>
           <li><a href="#projects">Creations</a></li>
           <li><a href="#skills">Arcanum</a></li>
           <li><a href="#contact">Summon</a></li>
+
+          <!-- Mobile Menu Footer (Socials & CV Button) - only visible in mobile menu -->
+          <div class="mobile-menu-footer">
+            <div class="mobile-socials">
+              <a
+                href="https://www.instagram.com/md_tharick22/"
+                target="_blank"
+                aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/md.tharick/"
+                target="_blank"
+                aria-label="Facebook"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a
+                href="https://x.com/a_tharick52871"
+                target="_blank"
+                aria-label="X (Twitter)"
+                ><i class="fab fa-x-twitter"></i
+              ></a>
+              <a
+                href="https://github.com/MohammedTharick25"
+                target="_blank"
+                aria-label="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/mdtharick/"
+                target="_blank"
+                class="social-link"
+                aria-label="LinkedIn"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+            <a
+              href="path/to/your/cv.pdf"
+              download
+              class="cta-button mobile-cv-button"
+              >Download CV</a
+            >
+          </div>
         </ul>
-        <button
-          id="theme-toggle"
-          class="theme-toggle-button"
-          title="Toggle theme"
-          aria-label="Toggle theme"
-        >
-          <span class="icon-sun">☀️</span>
-          <span class="icon-moon" style="display: none">🌙</span>
-        </button>
+
+        <!-- Navigation Actions (Desktop Socials, Theme Toggle, Hamburger) -->
+        <div class="nav-actions">
+          <!-- Desktop social links -->
+          <a
+            href="https://www.instagram.com/md_tharick22/"
+            target="_blank"
+            class="social-link"
+            aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/md.tharick/"
+            target="_blank"
+            class="social-link"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a
+            href="https://x.com/a_tharick52871"
+            target="_blank"
+            class="social-link"
+            aria-label="X (Twitter)"
+            ><i class="fab fa-x-twitter"></i
+          ></a>
+          <a
+            href="https://github.com/MohammedTharick25"
+            target="_blank"
+            class="social-link"
+            aria-label="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/mdtharick/"
+            target="_blank"
+            class="social-link"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+
+          <!-- Theme toggle -->
+          <button
+            id="theme-toggle"
+            class="theme-toggle-button"
+            title="Toggle theme"
+            aria-label="Toggle theme"
+          >
+            <span class="icon-sun">☀️</span>
+            <span class="icon-moon" style="display: none">🌙</span>
+          </button>
+
+          <!-- Hamburger menu icon for mobile -->
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
       </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
+      <!-- Hero Section -->
       <section id="hero" class="hero-section">
         <div class="hero-content">
           <h1 class="hero-title">
@@ -60,18 +167,18 @@
         <div class="hero-particles" id="hero-particles"></div>
       </section>
 
+      <!-- About Section -->
       <section id="about" class="about-section">
         <h2>The Alchemist's Profile</h2>
         <div class="about-content">
           <div class="about-image">
-            <img src="tharick.jpg" alt="Your Name" />
+            <img src="tharick.jpg" alt="Mohammed Tharick" />
           </div>
           <div class="about-text">
             <p>
               Ye olde web wizard here! No React familiars or Vue homunculi in my
               tower - just good ol' HTML golems, CSS phoenixes, and JavaScript
-              dragons that I tame with vanilla spells. Beware my Responsive
-              Incantation and the mighty Flexbox Alignment Ritual!
+              dragons that I tame with vanilla spells.
             </p>
             <p>
               My quest is to transform user needs into elegant, functional, and
@@ -81,14 +188,15 @@
         </div>
       </section>
 
+      <!-- Projects Section -->
       <section id="projects" class="projects-section">
         <h2>Formulated Creations</h2>
         <div class="projects-grid">
           <div class="project-card">
-            <img src="eclat dime.png" alt="Project 1" />
+            <img src="eclat-dine.png" alt="Project Eclat Dine" />
             <div class="project-info">
               <h3>Eclat Dine</h3>
-              <p>A mystical restaurent platform for enchanted goods.</p>
+              <p>A mystical restaurant platform for enchanted goods.</p>
               <div class="project-tags">
                 <span>HTML</span><span>CSS</span><span>JavaScript</span>
               </div>
@@ -97,11 +205,15 @@
               </button>
             </div>
           </div>
+
           <div class="project-card">
-            <img src="system interface.png" alt="Project 2" />
+            <img
+              src="system-interface.png"
+              alt="Project Solo Leveling System"
+            />
             <div class="project-info">
               <h3>Solo Leveling System</h3>
-              <p>An awesome website like Solo Levelling System.</p>
+              <p>An awesome website like Solo Leveling System.</p>
               <div class="project-tags">
                 <span>HTML</span><span>React</span><span>CSS</span
                 ><span>JavaScript</span><span>Node</span>
@@ -111,13 +223,14 @@
               </button>
             </div>
           </div>
+
           <div class="project-card">
-            <img src="mystic motors.png" alt="Project 3" />
+            <img src="mystic-motors.png" alt="Project Mystic Motors" />
             <div class="project-info">
               <h3>Mystic Motors</h3>
               <p>
                 A mystical transportation platform for enchanted rides, Mystic
-                Motors offers magical journeys with comfort and style
+                Motors offers magical journeys with comfort and style.
               </p>
               <div class="project-tags">
                 <span>HTML</span><span>CSS</span><span>JavaScript</span
@@ -128,8 +241,9 @@
               </button>
             </div>
           </div>
+
           <div class="project-card">
-            <img src="readify.png" alt="Project 4" />
+            <img src="readify.png" alt="Project Readify" />
             <div class="project-info">
               <h3>Readify</h3>
               <p>
@@ -147,6 +261,7 @@
         </div>
       </section>
 
+      <!-- Skills Section -->
       <section id="skills" class="skills-section">
         <h2>The Arcane Library</h2>
         <div class="skills-constellation-wrapper">
@@ -212,6 +327,7 @@
         </div>
       </section>
 
+      <!-- Contact Section -->
       <section id="contact" class="contact-section">
         <h2>Summoning Rites</h2>
         <form
@@ -221,45 +337,108 @@
         >
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_template" value="box" />
+
           <div class="form-group">
             <input type="text" id="name" name="name" required />
             <label for="name">Your Name</label>
           </div>
+
           <div class="form-group">
             <input type="email" id="email" name="email" required />
             <label for="email">Your Email</label>
           </div>
+
           <div class="form-group">
             <textarea id="message" name="message" rows="5" required></textarea>
             <label for="message">Your Message</label>
           </div>
+
           <button type="submit" class="submit-rune">Send Invocation</button>
         </form>
       </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-      <p>
-        © <span id="year"></span> Mohammed Tharick. All rights reserved. Crafted
-        with code & a touch of magic.
-      </p>
+      <div class="footer-inner">
+        <p>
+          © <span id="year"></span> Mohammed Tharick. All rights reserved.
+          Crafted with code & a touch of magic.
+        </p>
+        <div class="footer-actions">
+          <div class="footer-socials">
+            <a
+              href="https://www.instagram.com/md_tharick22/"
+              target="_blank"
+              class="social-link"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/md.tharick/"
+              target="_blank"
+              class="social-link"
+              aria-label="Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://x.com/a_tharick52871"
+              target="_blank"
+              class="social-link"
+              aria-label="X (Twitter)"
+              ><i class="fab fa-x-twitter"></i
+            ></a>
+            <a
+              href="https://github.com/MohammedTharick25"
+              target="_blank"
+              class="social-link"
+              aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/mdtharick/"
+              target="_blank"
+              class="social-link"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+          <a
+            href="MD-Tharick-CV.docx"
+            download
+            class="cta-button download-cv-button"
+            >Download CV</a
+          >
+        </div>
+      </div>
     </footer>
 
-    <div id="projectModal" class="modal">
+    <!-- Project Modal -->
+    <div
+      id="projectModal"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalProjectTitle"
+      aria-hidden="true"
+    >
       <div class="modal-content">
-        <span class="close-button">×</span>
+        <span class="close-button" role="button" aria-label="Close modal"
+          >×</span
+        >
         <h3 id="modalProjectTitle">Project Title</h3>
         <img id="modalProjectImage" src="" alt="Project Image" />
         <p id="modalProjectDescription">
           Detailed project description goes here...
         </p>
         <div id="modalProjectTech" class="project-tags"></div>
-        <a id="modalProjectLink" href="#" target="_blank" class="cta-button"
-          >Visit Live Site</a
-        >
+        <a id="modalProjectLink" href="#" target="_blank" class="cta-button">
+          Visit Live Site
+        </a>
       </div>
     </div>
 
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
