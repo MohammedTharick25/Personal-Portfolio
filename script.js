@@ -142,6 +142,14 @@ document.addEventListener("DOMContentLoaded", () => {
       liveLink: "https://solo-leveling-system.netlify.app/",
     },
     project3: {
+      title: "Etch-A-Sketch Game",
+      image: "etch-a-sketch.png",
+      description:
+        "A browser-based drawing app inspired by the classic Etch-a-Sketch toy. Users can draw by hovering over a customizable grid and switch between different modes including solid color, grayscale shading, and rainbow mode. The app also includes controls for resizing the grid and resetting the board.",
+      tags: ["HTML5", "CSS3", "JavaScript", "GSAP", "Responsive Design"],
+      liveLink: "https://odin-etch-a-sketch.netlify.app/",
+    },
+    project4: {
       title: "Mystic Motors - Transportation Service",
       image: "mystic-motors.png",
       description:
@@ -149,7 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
       tags: ["HTML5", "CSS3", "JavaScript", "GSAP", "Responsive Design"],
       liveLink: "https://mohammedtharick25.github.io/Mystic-Motors/",
     },
-    project4: {
+    project5: {
       title: "Readify - Online Book Store",
       image: "readify.png",
       description:
@@ -522,3 +530,4 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 });
+
